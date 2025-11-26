@@ -52,7 +52,7 @@ public class PlaywrightFactory {
             capabilities.put("LT:Options", ltOptions);
 
             String capsJson = new Gson().toJson(capabilities);
-            String encodedCaps = URLEncoder.encode(capsJson, StandardCharsets.UTF_8);
+            String encodedCaps = URLEncoder.encode(capsJson, StandardCharsets.UTF_8.name());
             String cdpUrl = Config.LT_CDP_URL + encodedCaps;
 
             ctx.browser = ctx.playwright.chromium().connect(cdpUrl);
