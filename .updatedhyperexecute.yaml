@@ -1,0 +1,171 @@
+accessibilityJob: false
+alwaysRunPostSteps: false
+appium: null
+autosplit: true
+betaFeature:
+    setPartiallyCompletedAsCompleted: false
+captureScreenRecordingForScenarios: false
+codeDirectory: playwright102-java
+collectLocalGitData: true
+combineTasksInMatrixMode: false
+concurrency: 2
+cypress: false
+differentialUpload:
+    enabled: false
+    forcedDisabled: false
+    ttlHours: null
+dynamicAllocation: false
+env:
+    LT_ACCESS_KEY: ${{LT_ACCESS_KEY}}
+    LT_USERNAME: ${{LT_USERNAME}}
+errorCategorizedOnFailureOnly: false
+framework:
+    additional_args: null
+    args:
+        appId: ""
+        appPath: ""
+        artifacts: false
+        autoGrantPermissions: false
+        avoidAppLaunch: false
+        customData: {}
+        darkMode: false
+        deviceSelectionStrategy: ""
+        devices: []
+        disableReleaseDevice: false
+        enableBluetooth: false
+        enableResultBundle: false
+        filters:
+            attributes: []
+        fixedIP: ""
+        isRealMobile: null
+        isVirtualDevice: false
+        language: ""
+        locale: ""
+        minorOsVersion: false
+        mitmProxy: false
+        mobileDC: null
+        networkHar: false
+        networkLogsOptions:
+            captureContent: false
+            excludeHosts: []
+            includeHosts: []
+        otherApps: []
+        platformName: ""
+        playwrightRD: false
+        preservedDevice: false
+        queueTimeout: 0
+        shards:
+            mappings: []
+        skipInstall: false
+        skipUninstallPreviousBuild: false
+        skipXMLOnRun: false
+        smartUI: null
+        testRemarks: false
+        testSuiteAppId: ""
+        testSuitePath: ""
+        uninstallPreviousBuild: false
+        xcTestPlanId: ""
+        xcTestPlanPath: ""
+    baseCommand: ""
+    defaultReports: false
+    discoveryFlags: []
+    discoveryMode: local
+    discoveryType: method
+    downloadURL: ""
+    flags:
+        - -DsuiteXmlFile=testng.xml
+        - -DRUN_MODE=LAMBDATEST
+    isTestNGXMLSuite: true
+    licenseKey: ""
+    name: maven/testng
+    runnerFlags: []
+    toscaArgs: null
+    userdefinediscovery: false
+    version: ""
+    workingDirectory: ""
+globalPost:
+    commands: []
+    completed: false
+    mode: ""
+    runson: ""
+    shell: ""
+    workingDirectory: ""
+globalPre:
+    cache: false
+    commands: []
+    completed: false
+    location: ""
+    maxRetries: 0
+    mode: ""
+    runson: ""
+    shell: ""
+    type: ""
+    workingDirectory: ""
+    yamlPath: null
+jobID: cd30e6b6-6de0-4fc8-9fc2-a13e82bfbb29
+key: '********'
+localHTTPProxy: ""
+ltOptions: {}
+maxRetriesPreSteps: 0
+meta: {}
+partialReports:
+    type: html
+    location: target/surefire-reports
+    frameworkName: ""
+    email:
+        to: []
+        metaInfo: []
+        linkValidity: 0
+    configPath: ""
+    configPathURL: ""
+platformConfig: null
+postDirectives:
+    commands:
+        - zip -r playwright-reports.zip target/surefire-reports
+    shell: bash
+    workingDirectory: ""
+preDirectives:
+    commands:
+        - mvn -q -DskipTests dependency:go-offline
+    maxRetries: 0
+    shell: bash
+    workingDirectory: ""
+project:
+    id: 01KAXCXD9QE85E90RMZ0ZPY168
+    name: LambdaTest Default Project
+    type: custom
+projectpath: ""
+regionConfig:
+    storage:
+        enabled: false
+        name: ""
+        platform: azure
+        region: ""
+    vm: []
+report: true
+runson: win
+slackChannel: ""
+sourcePayload:
+    verifySSL: true
+sprofilePath: ""
+storageType: ""
+testDiscoveryResult:
+    - com.lambdatest.tests.PlaywrightAssignmentTests#testScenario1_simpleFormDemo
+    - com.lambdatest.tests.PlaywrightAssignmentTests#testScenario3_inputFormSubmit
+    - com.lambdatest.tests.PlaywrightAssignmentTests#testScenario2_dragAndDropSlider
+testDiscoveryResult2D:
+    - - com.lambdatest.tests.PlaywrightAssignmentTests#testScenario1_simpleFormDemo
+    - - com.lambdatest.tests.PlaywrightAssignmentTests#testScenario3_inputFormSubmit
+    - - com.lambdatest.tests.PlaywrightAssignmentTests#testScenario2_dragAndDropSlider
+testDiscoveryResultV3: []
+testSuites: []
+testType: playwright
+triggerMode: false
+triggerSource: CLI
+tunnelOpts:
+    testsPerTunnel: 10
+unzipPayload: false
+user: mahathuvasri
+version: "0.2"
+waitForArtefactsUpload: false
+whiteLabelProductTag: ""

@@ -1,0 +1,159 @@
+{
+    "id": "cd30e6b6-6de0-4fc8-9fc2-a13e82bfbb29",
+    "remark": "Job failed as encountered a Test level failure",
+    "created_at": "2025-11-26T05:38:11Z",
+    "update_at": "2025-11-26T05:38:49Z",
+    "global_timeout": 90,
+    "tunnel_name": "",
+    "start_time": "2025-11-26T05:38:27Z",
+    "end_time": "2025-11-26T05:38:49Z",
+    "summary": {
+        "total_time": 22000000000,
+        "execution_time": 22000000000,
+        "total_tasks": 2,
+        "build_time_consumed": 40000000000,
+        "jobTestExecutionTime": "7s",
+        "failed_tasks": 2,
+        "total_stage_info": {
+            "prerun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            },
+            "scenario": {
+                "StageFailedPercent": 100,
+                "StagePassPercent": 0,
+                "TotalStage": 3
+            },
+            "test_discovery": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            }
+        },
+        "status": "failed",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=cd30e6b6-6de0-4fc8-9fc2-a13e82bfbb29"
+    },
+    "tasks": [
+        {
+            "id": "HYPW-2864500-1764135506880690553DFT",
+            "os": "win",
+            "status": "failed",
+            "remark": "Job failed as encountered a Test level failure",
+            "debug": false,
+            "created_at": "2025-11-26T05:38:26Z",
+            "update_at": "2025-11-26T05:38:49Z",
+            "start_time": "2025-11-26T05:38:27Z",
+            "end_time": "2025-11-26T05:38:49Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "176792ca-6eb0-4f35-a37a-848633a04745",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-11-26T05:38:31Z",
+                    "started_at": "2025-11-26T05:38:31Z",
+                    "updated_at": "2025-11-26T05:38:41Z",
+                    "order": 2,
+                    "task_number": 1
+                },
+                {
+                    "id": "f6f14e6a-7657-4c14-bb1f-a970e727d1ec",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2025-11-26T05:38:41Z",
+                    "started_at": "2025-11-26T05:38:41Z",
+                    "updated_at": "2025-11-26T05:38:41Z",
+                    "order": 3,
+                    "task_number": 1
+                },
+                {
+                    "id": "e9adf3c8-1bd6-4190-bb9c-d54da0eae55e",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "com.lambdatest.tests.PlaywrightAssignmentTests#testScenario3_inputFormSubmit",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2025-11-26T05:38:41Z",
+                    "started_at": "2025-11-26T05:38:42Z",
+                    "updated_at": "2025-11-26T05:38:45Z",
+                    "order": 4,
+                    "task_number": 1
+                },
+                {
+                    "id": "c9b0af79-4d0e-4109-b203-39901c70a68d",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "com.lambdatest.tests.PlaywrightAssignmentTests#testScenario1_simpleFormDemo",
+                    "iteration": 0,
+                    "link": "command.2.0.log",
+                    "created_at": "2025-11-26T05:38:41Z",
+                    "started_at": "2025-11-26T05:38:45Z",
+                    "updated_at": "2025-11-26T05:38:48Z",
+                    "order": 5,
+                    "task_number": 1
+                }
+            ]
+        },
+        {
+            "id": "HYPW-2864500-1764135506885384081ASE",
+            "os": "win",
+            "status": "failed",
+            "remark": "Job failed as encountered a Test level failure",
+            "debug": false,
+            "created_at": "2025-11-26T05:38:26Z",
+            "update_at": "2025-11-26T05:38:45Z",
+            "start_time": "2025-11-26T05:38:27Z",
+            "end_time": "2025-11-26T05:38:45Z",
+            "group_number": 2,
+            "stages": [
+                {
+                    "id": "a42fc8be-f9b4-4435-91df-2aac632c1911",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-11-26T05:38:30Z",
+                    "started_at": "2025-11-26T05:38:30Z",
+                    "updated_at": "2025-11-26T05:38:40Z",
+                    "order": 2,
+                    "task_number": 2
+                },
+                {
+                    "id": "26f20d0b-1daf-4473-8b6b-8a84c43546a4",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2025-11-26T05:38:40Z",
+                    "started_at": "2025-11-26T05:38:40Z",
+                    "updated_at": "2025-11-26T05:38:40Z",
+                    "order": 3,
+                    "task_number": 2
+                },
+                {
+                    "id": "f94ab81f-e6d7-4611-a70b-ec3d4c311cb9",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "com.lambdatest.tests.PlaywrightAssignmentTests#testScenario2_dragAndDropSlider",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2025-11-26T05:38:40Z",
+                    "started_at": "2025-11-26T05:38:41Z",
+                    "updated_at": "2025-11-26T05:38:45Z",
+                    "order": 4,
+                    "task_number": 2
+                }
+            ]
+        }
+    ],
+    "test_ids": null
+}

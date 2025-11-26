@@ -1,0 +1,47 @@
+version: "0.2"
+
+concurrency: 2
+
+runson: win
+
+preDirectives:
+  commands:
+    - mvn -q -DskipTests dependency:go-offline
+  shell: bash
+
+framework:
+  name: "maven/testng"
+  flags:
+    - "-DsuiteXmlFile=testng.xml"
+    - "-DRUN_MODE=LAMBDATEST"
+
+env:
+  LT_USERNAME: ${{LT_USERNAME}}
+  LT_ACCESS_KEY: ${{LT_ACCESS_KEY}}
+
+partialReports:
+  location: target/surefire-reports
+  type: html
+frameworkName: testng
+report: true
+
+postDirectives:
+  commands:
+    - zip -r playwright-reports.zip target/surefire-reports
+  shell: bash
+
+# matrix:
+#   platform_browser:
+#     - os: Windows 11
+#       browser: Chrome
+#       browserVersion: latest
+#     - os: Linux
+#       browser: Firefox
+#       browserVersion: latest
+
+#   LT:Options:
+#     video: true
+#     console: "info"
+#     network: true
+
+
